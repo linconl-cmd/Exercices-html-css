@@ -1,0 +1,94 @@
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hello Pizza</title>
+	
+</head>
+<body>
+	<header>
+		<h1>Hello Pizza</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Sabores</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<ul id="vantagens">
+			<li>Qualidade</li>
+			<li>Sabor</li>
+			<li>Praticidade</li>
+			<li>Agilidade</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Sabores</h2>
+		<img src="imagens/imagem 1.jpg" id="pizza sabores">
+		<table>
+			<tr>
+				<th>Pizzas</th>
+				<th>Queijo e Molho</th>
+				<th>Salada</th>
+				<th>Carne</th>
+				<th>Azeito</th>
+			</tr>
+			<tr>
+				<td>Mozzarella</td>
+				<td rowspan="6" class="texto-positivo">Sim</td>
+				<td class="texto-negativo">Nao</td>
+				<td class="texto-negativo">Nao</td>
+				<td class="texto-negativo">Nao</td>
+			</tr>
+			<tr>
+				<td>Calabresa</td>
+				<td class="texto-negativo">Nao</td>
+				<td class="texto-positivo">Sim</td>
+				<td class="texto-positivo">Sim</td>
+			</tr>
+			<tr>
+				<td>Pepperoni</td>
+				<td class="texto-negativo">Nao</td>
+				<td class="texto-positivo">Sim</td>
+				<td class="texto-positivo">Sim</td>
+			</tr>
+			<tr>
+				<td>Marguerita</td>
+				<td class="texto-positivo">Sim</td>
+				<td class="texto-positivo">Sim</td>
+				<td class="texto-positivo">Sim</td>
+			</tr>
+			<tr>
+				<td>Portuguesa</td>
+				<td class="texto-positivo">Sim</td>
+				<td class="texto-positivo">Sim</td>
+				<td class="texto-positivo">Sim</td>
+			</tr>
+			<tr>
+				<td>Alho</td>
+				<td class="texto-negativo">Nao</td>
+				<td class="texto-negativo">Nao</td>
+				<td class="texto-negativo">Nao</td>
+			</tr>
+		</table>
+	</section>
+	<section>
+		<h2>Contatos</h2>
+		<form action="meuserver.php" method="get">
+			<label>Nome:</label>
+			<input type="text" name="nome" placeholder="digite seu nome">
+			<label>E-mail:</label>
+			<input type="text" name="email" placeholder="digite seu e-mail">
+			<label>Mensagem:</label>
+			<textarea name="mensagem" placeholder="digite sua mensagem aqui."></textarea>
+			<input type="submit" value="enviar">
+		</form>
+	</section>
+	<footer>
+		<a href="#" id="logo-hellopizza"> &copy;Hello Pizza</a>
+		<p>Todos os direitos reservados  2021 - LC</p>
+	</footer>
+</body>
+</html>

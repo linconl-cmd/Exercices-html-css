@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade - Matrícula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span>Faculdade</span>
+    </header>
+    <main>
+        <h1>Matrícula</h1>
+
+        <p>Preencha os campos abaixo para criar a sua matrícula e seu cadastro.</p>
+        <p>Todos os campos que tiverem um "*" na frente sao obrigatórios.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula3/">
+            <label>* Nome:</label>
+            <input placeholder="Digite aqui" required type="text" name="nome"> 
+            <label>* Data de Nascimento:</label>
+            <input placeholder="Digite aqui" required type="date" name="data_nascimento" max="2004-03-01">
+            <label>* E-mail:</label>
+            <input placeholder="Digite aqui" required type="email" name="email">
+            <label>* Telefone:</label>
+            <input placeholder="(XX)XXXX-XXXX"  required type="numer" name="telefone" minlength="10" maxlength="11">
+            <label>* Melhor dia para vencimento:</label>
+            <input placeholder="Digite aqui" required type="number" name="dia_vencimento">
+            <label>* Login:</label>
+            <input placeholder="Digite aqui" required type="text" name="login">
+            <label>* Senha:</label>
+            <input placeholder="Digite aqui" minlength="4" maxlength="6" required type="password" name="senha">
+            <button type="submit">Enviar Matrícula.</button>
+        </form>
+    </main>  
+</body>
+</html>

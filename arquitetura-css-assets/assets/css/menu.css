@@ -1,0 +1,23 @@
+.menu-list {
+    display: flex;
+    
+}
+
+.menu-item:last-child .menu-link {
+    margin-right: 0;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-link {
+    color: #808080;
+    text-decoration: none;
+    margin-right: 1.25rem;
+    text-transform: lowercase;
+}
+.menu-link:hover {
+    color: black;
+    text-decoration: underline;
+}

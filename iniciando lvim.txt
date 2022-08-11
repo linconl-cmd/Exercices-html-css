@@ -1,0 +1,1 @@
+/home/lindev/.local/bin/lvim

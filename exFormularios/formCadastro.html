@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro de Conta</title>
+</head>
+<body>
+	<form method="GET" action="myServer.php">
+		<div>
+				<fieldset>
+					<legend>Conta</legend>
+						<div>
+							<label>Email</label>
+							<input type="email" name="conta_email" required minlength="5" maxlength="256">
+						</div>
+						<div>
+							<label>Senha</label>
+							<input type="password" name="conta_senha" >
+						</div>
+			
+				</fieldset>
+				
+				<fieldset>
+					<legend>Dados pessoais</legend>
+						<div>
+							<label>Nome</label>
+							<input type="text"  placeholder="Nome completo" name="dados_pessoais_nome">
+						</div>
+				
+						<div>
+							<label>Telefone</label>
+							<input type="text"  placeholder="(73) 99999-9999" name="dados_pessoais_telefone">
+						</div>
+				
+						<div>
+							<label>Sexo:</label>
+							<input type="radio" value="masculino" name="sexo" checked>
+							<label>Masculino</label>
+							<input type="radio" value="feminino" name="sexo">
+							<label>Feminino</label>
+						</div>
+						
+						<div>
+							<labe>Data de nascimento:</label>
+							<input type="date" name="dados_pessoais_data">
+						</div>
+						
+						<div>
+							<label>Foto de perfil:</label>
+							<input type="file" accept="image/*" name="dados_pessoais_foto">
+						</div>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Endereço</legend>
+						<div>
+							<label>Rua</label>
+							<input type="text" name="endereco_rua">
+						</div>
+				
+						<div>
+							<label>Número</label>
+							<input type="number" min="1" max="999" name="endereco_numero">
+						</div>
+						
+						<div>
+							<label>Complemento</label>
+							<input type="text" name="endereco_complemento">
+						</div>
+				
+						<div>
+							<label>Cidade</label>
+							<input type="text" name="endereço_cidade">
+						</div>
+				
+						<div>
+							<label>UF</label>
+							<select name="endereco_estado">
+								<option value="BA">BA</option>
+								<option value="RJ">RJ</option>
+							</select>
+						</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Anúncio</legend>
+						<div>
+							<label>Como nos conheceu</label>
+							<textarea name="como_nos_conheceu" placeholder="Digite aqui" maxlength="256"></textarea>
+						</div>
+				
+						<div>
+							<label>Desejo receber ofertas por e-mail</label>
+							<input type="checkbox" checked name="receber_anuncio">
+						</div>
+				</fieldset>
+		</div>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
